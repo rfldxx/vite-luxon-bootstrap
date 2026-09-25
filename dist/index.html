@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Адаптивные часы на Vite, TypeScript, Luxon и Bootstrap">
+    <meta name="theme-color" content="#0d6efd">
+    <title>Luxon Clock · Vite + Bootstrap</title>
+    <script type="module" crossorigin src="./assets/index-B3kAUEji.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CbUkOqSR.css">
+  </head>
+  <body>
+    <main class="container min-vh-100 d-flex align-items-center justify-content-center py-4 py-md-5">
+      <section class="clock-card card border-0 shadow-lg overflow-hidden w-100" aria-labelledby="page-title">
+        <div class="card-body p-4 p-md-5 text-center">
+          <div class="d-inline-flex align-items-center gap-2 rounded-pill bg-primary-subtle text-primary-emphasis px-3 py-2 mb-4">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="small fw-semibold text-uppercase tracking-wide">Локальное время</span>
+          </div>
+
+          <p class="text-body-secondary mb-2">Сегодня</p>
+          <p id="date" class="date-label fw-semibold mb-3">Загрузка даты…</p>
+
+          <h1 id="page-title" class="visually-hidden">Часы Luxon</h1>
+          <div id="clock" class="clock-display font-monospace fw-bold text-primary mb-3" aria-live="polite">
+            --.--.- --:--:--
+          </div>
+
+          <p class="text-body-secondary mb-0">
+            Часовой пояс: <span id="zone" class="fw-semibold text-body">определяется…</span>
+          </p>
+        </div>
+
+        <div class="card-footer border-0 bg-body-tertiary px-4 py-3 text-center text-body-secondary small">
+          Хузин Рафаэль Илнурович · ИСУ 507435 · Vite + TypeScript + Luxon + Bootstrap
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
